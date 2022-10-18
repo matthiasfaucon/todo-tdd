@@ -4,7 +4,7 @@ import {fileURLToPath} from 'url'
 import { v4 as uuidv4 } from 'uuid';
 import lodash from 'lodash'
 
-const __dirname = dirname('../');
+const __dirname = dirname('../db');
 const file = join(__dirname, 'db.json')
 // Create a db.json file and load the lowdb adapter to allow read/write functionality on the db file(A new db.json file will be created for you when you run this file)
 const db = new LowSync(new JSONFileSync(file));
